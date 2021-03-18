@@ -1,8 +1,7 @@
 def prime?(num)
-  i=2
+  array=(2....to_a
   if num>1
-    if num%i==0
-      return false
+    array.none? {|i| num%i==0}
   else
     return false
   end
